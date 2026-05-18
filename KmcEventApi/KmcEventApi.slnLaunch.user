@@ -1,0 +1,19 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "KmcEventApi\\KmcEventApi.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "KmcPublicWeb\\KmcPublicWeb.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\KmcOrganizerPortal\\KmcOrganizerPortal\\KmcOrganizerPortal.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

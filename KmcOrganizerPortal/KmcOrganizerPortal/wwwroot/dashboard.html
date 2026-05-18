@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMC Organizer - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="dashboard-layout">
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>KMC <span>Admin</span></h2>
+            </div>
+            <nav>
+                <a href="javascript:void(0)" onclick="showSection('dashboard')" id="nav-dashboard" class="active">
+                    <i class="bi bi-speedometer2"></i> Dashboard
+                </a>
+                <a href="javascript:void(0)" onclick="showSection('events')" id="nav-events">
+                    <i class="bi bi-calendar-event"></i> My Events
+                </a>
+                <a href="javascript:void(0)" onclick="showSection('privacy')" id="nav-privacy">
+                    <i class="bi bi-shield-lock"></i> Privacy Policy
+                </a>
+                <hr style="border: 0.1px solid rgba(255,255,255,0.1); margin: 20px 0;">
+                <a href="javascript:void(0)" onclick="logout()" style="color: #ff4d4d;">
+                    <i class="bi bi-box-arrow-left"></i> Logout
+                </a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <div>
+                    <h1 id="page-title">Dashboard Overview</h1>
+                    <p id="user-display" style="color: #a3aed0; margin: 0;">Welcome back!</p>
+                </div>
+            </header>
+
+            <div id="main-display-area" class="content-fade-in">
+            </div>
+        </main>
+    </div>
+
+    <div id="eventModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 style="color: var(--primary); margin-bottom: 20px;">Create New Event</h2>
+
+            <form onsubmit="handleAddEvent(event)" id="addEventForm">
+                <div class="input-group">
+                    <label>Event Title</label>
+                    <input type="text" id="eventTitle" placeholder="e.g. Summer Music Festival" required>
+                </div>
+
+                <div style="display: flex; gap: 15px;">
+                    <div class="input-group" style="flex: 1;">
+                        <label>Event Type</label>
+                        <select id="eventType" style="width: 100%; padding: 12px; border-radius: 12px; border: 1px solid #e2e8f0;">
+                            <option value="Concert">Concert</option>
+                            <option value="Workshop">Workshop</option>
+                            <option value="Festival">Festival</option>
+                            <option value="Sports">Sports</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="input-group" style="flex: 1;">
+                        <label>Location</label>
+                        <input type="text" id="eventLocation" placeholder="Venue or City" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Visibility</label>
+                    <select id="eventVisibility" style="width: 100%; padding: 12px; border-radius: 12px; border: 1px solid #e2e8f0; font-weight: bold; color: var(--primary);">
+                        <option value="Public">🌍 Public (Show on KMC Web App)</option>
+                        <option value="Private">🔒 Private (Only visible to me)</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Description</label>
+                    <textarea id="eventDesc" rows="3" style="width: 100%; padding: 12px; border-radius: 12px; border: 1px solid #e2e8f0; font-family: inherit;" placeholder="Briefly describe your event..."></textarea>
+                </div>
+
+                <div style="display: flex; gap: 15px;">
+                    <div class="input-group" style="flex: 1;">
+                        <label>Date</label>
+                        <input type="date" id="eventDate" required>
+                    </div>
+                    <div class="input-group" style="flex: 1;">
+                        <label>Time</label>
+                        <input type="time" id="eventTime" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-login" style="margin-top: 20px;">
+                    <i class="bi bi-cloud-upload"></i> Publish Event
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div id="viewModal" class="modal">
+        <div class="modal-content" style="width: 500px;">
+            <span class="close" onclick="closeViewModal()">&times;</span>
+            <h2 style="color: var(--primary); border-bottom: 2px solid #e2e8f0; padding-bottom: 10px;">Registered Participants</h2>
+
+            <div id="participants-list" style="margin-top: 20px; max-height: 300px; overflow-y: auto;">
+            </div>
+
+            <button onclick="closeViewModal()" class="btn-login" style="background: #a3aed0; margin-top: 20px;">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>

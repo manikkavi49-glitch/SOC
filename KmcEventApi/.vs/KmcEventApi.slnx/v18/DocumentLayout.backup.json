@@ -1,0 +1,413 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2A93B362-E384-555B-7727-72BE6AF98F76}|..\\KmcOrganizerPortal\\KmcOrganizerPortal\\KmcOrganizerPortal.csproj|c:\\users\\kavishka\\source\\repos\\kmcorganizerportal\\kmcorganizerportal\\wwwroot\\register.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A93B362-E384-555B-7727-72BE6AF98F76}|..\\KmcOrganizerPortal\\KmcOrganizerPortal\\KmcOrganizerPortal.csproj|c:\\users\\kavishka\\source\\repos\\kmcorganizerportal\\kmcorganizerportal\\wwwroot\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A93B362-E384-555B-7727-72BE6AF98F76}|..\\KmcOrganizerPortal\\KmcOrganizerPortal\\KmcOrganizerPortal.csproj|c:\\users\\kavishka\\source\\repos\\kmcorganizerportal\\kmcorganizerportal\\wwwroot\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A93B362-E384-555B-7727-72BE6AF98F76}|..\\KmcOrganizerPortal\\KmcOrganizerPortal\\KmcOrganizerPortal.csproj|c:\\users\\kavishka\\source\\repos\\kmcorganizerportal\\kmcorganizerportal\\wwwroot\\dashboard.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E811E80-4C30-F3E6-64F8-C72D76C089A5}|KmcEventApi\\KmcEventApi.csproj|c:\\users\\kavishka\\source\\repos\\kmceventapi\\kmceventapi\\controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E811E80-4C30-F3E6-64F8-C72D76C089A5}|KmcEventApi\\KmcEventApi.csproj|solutionrelative:kmceventapi\\controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcEventApi\\Migrations\\20260401114233_AddVisibilityToEvents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KmcEventApi\\Migrations\\20260401114233_AddVisibilityToEvents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A93B362-E384-555B-7727-72BE6AF98F76}|..\\KmcOrganizerPortal\\KmcOrganizerPortal\\KmcOrganizerPortal.csproj|c:\\users\\kavishka\\source\\repos\\kmcorganizerportal\\kmcorganizerportal\\wwwroot\\auth.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E811E80-4C30-F3E6-64F8-C72D76C089A5}|KmcEventApi\\KmcEventApi.csproj|c:\\users\\kavishka\\source\\repos\\kmceventapi\\kmceventapi\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E811E80-4C30-F3E6-64F8-C72D76C089A5}|KmcEventApi\\KmcEventApi.csproj|solutionrelative:kmceventapi\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E811E80-4C30-F3E6-64F8-C72D76C089A5}|KmcEventApi\\KmcEventApi.csproj|c:\\users\\kavishka\\source\\repos\\kmceventapi\\kmceventapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E811E80-4C30-F3E6-64F8-C72D76C089A5}|KmcEventApi\\KmcEventApi.csproj|solutionrelative:kmceventapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcEventApi\\Migrations\\20260401094924_UpdateEventTableWithEmail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:KmcEventApi\\Migrations\\20260401094924_UpdateEventTableWithEmail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E811E80-4C30-F3E6-64F8-C72D76C089A5}|KmcEventApi\\KmcEventApi.csproj|c:\\users\\kavishka\\source\\repos\\kmceventapi\\kmceventapi\\controllers\\organizerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E811E80-4C30-F3E6-64F8-C72D76C089A5}|KmcEventApi\\KmcEventApi.csproj|solutionrelative:kmceventapi\\controllers\\organizerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E811E80-4C30-F3E6-64F8-C72D76C089A5}|KmcEventApi\\KmcEventApi.csproj|c:\\users\\kavishka\\source\\repos\\kmceventapi\\kmceventapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E811E80-4C30-F3E6-64F8-C72D76C089A5}|KmcEventApi\\KmcEventApi.csproj|solutionrelative:kmceventapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E811E80-4C30-F3E6-64F8-C72D76C089A5}|KmcEventApi\\KmcEventApi.csproj|c:\\users\\kavishka\\source\\repos\\kmceventapi\\kmceventapi\\models\\organizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E811E80-4C30-F3E6-64F8-C72D76C089A5}|KmcEventApi\\KmcEventApi.csproj|solutionrelative:kmceventapi\\models\\organizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13B29BD5-DB25-464E-8219-CD2798C7DA2C}|KmcPublicWeb\\KmcPublicWeb.csproj|c:\\users\\kavishka\\source\\repos\\kmceventapi\\kmcpublicweb\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{13B29BD5-DB25-464E-8219-CD2798C7DA2C}|KmcPublicWeb\\KmcPublicWeb.csproj|solutionrelative:kmcpublicweb\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13B29BD5-DB25-464E-8219-CD2798C7DA2C}|KmcPublicWeb\\KmcPublicWeb.csproj|c:\\users\\kavishka\\source\\repos\\kmceventapi\\kmcpublicweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{13B29BD5-DB25-464E-8219-CD2798C7DA2C}|KmcPublicWeb\\KmcPublicWeb.csproj|solutionrelative:kmcpublicweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13B29BD5-DB25-464E-8219-CD2798C7DA2C}|KmcPublicWeb\\KmcPublicWeb.csproj|c:\\users\\kavishka\\source\\repos\\kmceventapi\\kmcpublicweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13B29BD5-DB25-464E-8219-CD2798C7DA2C}|KmcPublicWeb\\KmcPublicWeb.csproj|solutionrelative:kmcpublicweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E811E80-4C30-F3E6-64F8-C72D76C089A5}|KmcEventApi\\KmcEventApi.csproj|c:\\users\\kavishka\\source\\repos\\kmceventapi\\kmceventapi\\controllers\\participantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E811E80-4C30-F3E6-64F8-C72D76C089A5}|KmcEventApi\\KmcEventApi.csproj|solutionrelative:kmceventapi\\controllers\\participantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E811E80-4C30-F3E6-64F8-C72D76C089A5}|KmcEventApi\\KmcEventApi.csproj|c:\\users\\kavishka\\source\\repos\\kmceventapi\\kmceventapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9E811E80-4C30-F3E6-64F8-C72D76C089A5}|KmcEventApi\\KmcEventApi.csproj|solutionrelative:kmceventapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13B29BD5-DB25-464E-8219-CD2798C7DA2C}|KmcPublicWeb\\KmcPublicWeb.csproj|c:\\users\\kavishka\\source\\repos\\kmceventapi\\kmcpublicweb\\models\\eventviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13B29BD5-DB25-464E-8219-CD2798C7DA2C}|KmcPublicWeb\\KmcPublicWeb.csproj|solutionrelative:kmcpublicweb\\models\\eventviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13B29BD5-DB25-464E-8219-CD2798C7DA2C}|KmcPublicWeb\\KmcPublicWeb.csproj|c:\\users\\kavishka\\source\\repos\\kmceventapi\\kmcpublicweb\\models\\participantviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13B29BD5-DB25-464E-8219-CD2798C7DA2C}|KmcPublicWeb\\KmcPublicWeb.csproj|solutionrelative:kmcpublicweb\\models\\participantviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13B29BD5-DB25-464E-8219-CD2798C7DA2C}|KmcPublicWeb\\KmcPublicWeb.csproj|c:\\users\\kavishka\\source\\repos\\kmceventapi\\kmcpublicweb\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13B29BD5-DB25-464E-8219-CD2798C7DA2C}|KmcPublicWeb\\KmcPublicWeb.csproj|solutionrelative:kmcpublicweb\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E811E80-4C30-F3E6-64F8-C72D76C089A5}|KmcEventApi\\KmcEventApi.csproj|c:\\users\\kavishka\\source\\repos\\kmceventapi\\kmceventapi\\models\\participant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E811E80-4C30-F3E6-64F8-C72D76C089A5}|KmcEventApi\\KmcEventApi.csproj|solutionrelative:kmceventapi\\models\\participant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13B29BD5-DB25-464E-8219-CD2798C7DA2C}|KmcPublicWeb\\KmcPublicWeb.csproj|c:\\users\\kavishka\\source\\repos\\kmceventapi\\kmcpublicweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13B29BD5-DB25-464E-8219-CD2798C7DA2C}|KmcPublicWeb\\KmcPublicWeb.csproj|solutionrelative:kmcpublicweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13B29BD5-DB25-464E-8219-CD2798C7DA2C}|KmcPublicWeb\\KmcPublicWeb.csproj|c:\\users\\kavishka\\source\\repos\\kmceventapi\\kmcpublicweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{13B29BD5-DB25-464E-8219-CD2798C7DA2C}|KmcPublicWeb\\KmcPublicWeb.csproj|solutionrelative:kmcpublicweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "login.html",
+              "DocumentMoniker": "C:\\Users\\Kavishka\\source\\repos\\KmcOrganizerPortal\\KmcOrganizerPortal\\wwwroot\\login.html",
+              "RelativeDocumentMoniker": "..\\KmcOrganizerPortal\\KmcOrganizerPortal\\wwwroot\\login.html",
+              "ToolTip": "C:\\Users\\Kavishka\\source\\repos\\KmcOrganizerPortal\\KmcOrganizerPortal\\wwwroot\\login.html",
+              "RelativeToolTip": "..\\KmcOrganizerPortal\\KmcOrganizerPortal\\wwwroot\\login.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-04-01T12:14:17.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "register.html",
+              "DocumentMoniker": "C:\\Users\\Kavishka\\source\\repos\\KmcOrganizerPortal\\KmcOrganizerPortal\\wwwroot\\register.html",
+              "RelativeDocumentMoniker": "..\\KmcOrganizerPortal\\KmcOrganizerPortal\\wwwroot\\register.html",
+              "ToolTip": "C:\\Users\\Kavishka\\source\\repos\\KmcOrganizerPortal\\KmcOrganizerPortal\\wwwroot\\register.html",
+              "RelativeToolTip": "..\\KmcOrganizerPortal\\KmcOrganizerPortal\\wwwroot\\register.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-04-01T11:59:36.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "auth.js",
+              "DocumentMoniker": "C:\\Users\\Kavishka\\source\\repos\\KmcOrganizerPortal\\KmcOrganizerPortal\\wwwroot\\auth.js",
+              "RelativeDocumentMoniker": "..\\KmcOrganizerPortal\\KmcOrganizerPortal\\wwwroot\\auth.js",
+              "ToolTip": "C:\\Users\\Kavishka\\source\\repos\\KmcOrganizerPortal\\KmcOrganizerPortal\\wwwroot\\auth.js",
+              "RelativeToolTip": "..\\KmcOrganizerPortal\\KmcOrganizerPortal\\wwwroot\\auth.js",
+              "ViewState": "AgIAACwBAAAAAAAAAAAcwEoBAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-04-01T11:16:31.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "dashboard.html",
+              "DocumentMoniker": "C:\\Users\\Kavishka\\source\\repos\\KmcOrganizerPortal\\KmcOrganizerPortal\\wwwroot\\dashboard.html",
+              "RelativeDocumentMoniker": "..\\KmcOrganizerPortal\\KmcOrganizerPortal\\wwwroot\\dashboard.html",
+              "ToolTip": "C:\\Users\\Kavishka\\source\\repos\\KmcOrganizerPortal\\KmcOrganizerPortal\\wwwroot\\dashboard.html",
+              "RelativeToolTip": "..\\KmcOrganizerPortal\\KmcOrganizerPortal\\wwwroot\\dashboard.html",
+              "ViewState": "AgIAACEAAAAAAAAAAAAQwHgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-04-01T11:24:19.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcEventApi\\appsettings.json",
+              "RelativeDocumentMoniker": "KmcEventApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcEventApi\\appsettings.json",
+              "RelativeToolTip": "KmcEventApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-01T07:03:08.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcPublicWeb\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "KmcPublicWeb\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcPublicWeb\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "KmcPublicWeb\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAgwEkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T06:20:09.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Event.cs",
+              "DocumentMoniker": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcEventApi\\Models\\Event.cs",
+              "RelativeDocumentMoniker": "KmcEventApi\\Models\\Event.cs",
+              "ToolTip": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcEventApi\\Models\\Event.cs",
+              "RelativeToolTip": "KmcEventApi\\Models\\Event.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T17:51:11.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EventsController.cs",
+              "DocumentMoniker": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcEventApi\\Controllers\\EventsController.cs",
+              "RelativeDocumentMoniker": "KmcEventApi\\Controllers\\EventsController.cs",
+              "ToolTip": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcEventApi\\Controllers\\EventsController.cs",
+              "RelativeToolTip": "KmcEventApi\\Controllers\\EventsController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwB4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T07:01:15.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\Kavishka\\source\\repos\\KmcOrganizerPortal\\KmcOrganizerPortal\\wwwroot\\style.css",
+              "RelativeDocumentMoniker": "..\\KmcOrganizerPortal\\KmcOrganizerPortal\\wwwroot\\style.css",
+              "ToolTip": "C:\\Users\\Kavishka\\source\\repos\\KmcOrganizerPortal\\KmcOrganizerPortal\\wwwroot\\style.css",
+              "RelativeToolTip": "..\\KmcOrganizerPortal\\KmcOrganizerPortal\\wwwroot\\style.css",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAcwBcBAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-04-01T11:40:42.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20260401114233_AddVisibilityToEvents.cs",
+              "DocumentMoniker": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcEventApi\\Migrations\\20260401114233_AddVisibilityToEvents.cs",
+              "RelativeDocumentMoniker": "KmcEventApi\\Migrations\\20260401114233_AddVisibilityToEvents.cs",
+              "ToolTip": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcEventApi\\Migrations\\20260401114233_AddVisibilityToEvents.cs",
+              "RelativeToolTip": "KmcEventApi\\Migrations\\20260401114233_AddVisibilityToEvents.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T11:42:33.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcEventApi\\Program.cs",
+              "RelativeDocumentMoniker": "KmcEventApi\\Program.cs",
+              "ToolTip": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcEventApi\\Program.cs",
+              "RelativeToolTip": "KmcEventApi\\Program.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAACkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T06:38:14.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcPublicWeb\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "KmcPublicWeb\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcPublicWeb\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "KmcPublicWeb\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAADIAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-01T08:33:17.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Organizer.cs",
+              "DocumentMoniker": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcEventApi\\Models\\Organizer.cs",
+              "RelativeDocumentMoniker": "KmcEventApi\\Models\\Organizer.cs",
+              "ToolTip": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcEventApi\\Models\\Organizer.cs",
+              "RelativeToolTip": "KmcEventApi\\Models\\Organizer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T09:36:17.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20260401094924_UpdateEventTableWithEmail.cs",
+              "DocumentMoniker": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcEventApi\\Migrations\\20260401094924_UpdateEventTableWithEmail.cs",
+              "RelativeDocumentMoniker": "KmcEventApi\\Migrations\\20260401094924_UpdateEventTableWithEmail.cs",
+              "ToolTip": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcEventApi\\Migrations\\20260401094924_UpdateEventTableWithEmail.cs",
+              "RelativeToolTip": "KmcEventApi\\Migrations\\20260401094924_UpdateEventTableWithEmail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T09:49:24.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OrganizersController.cs",
+              "DocumentMoniker": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcEventApi\\Controllers\\OrganizersController.cs",
+              "RelativeDocumentMoniker": "KmcEventApi\\Controllers\\OrganizersController.cs",
+              "ToolTip": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcEventApi\\Controllers\\OrganizersController.cs",
+              "RelativeToolTip": "KmcEventApi\\Controllers\\OrganizersController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAACcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T09:37:52.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "EventViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcPublicWeb\\Models\\EventViewModel.cs",
+              "RelativeDocumentMoniker": "KmcPublicWeb\\Models\\EventViewModel.cs",
+              "ToolTip": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcPublicWeb\\Models\\EventViewModel.cs",
+              "RelativeToolTip": "KmcPublicWeb\\Models\\EventViewModel.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T06:19:28.274Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcEventApi\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "KmcEventApi\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcEventApi\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "KmcEventApi\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAwwAwAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T06:35:19.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ParticipantsController.cs",
+              "DocumentMoniker": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcEventApi\\Controllers\\ParticipantsController.cs",
+              "RelativeDocumentMoniker": "KmcEventApi\\Controllers\\ParticipantsController.cs",
+              "ToolTip": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcEventApi\\Controllers\\ParticipantsController.cs",
+              "RelativeToolTip": "KmcEventApi\\Controllers\\ParticipantsController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAYwDQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T07:01:29.501Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcPublicWeb\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "KmcPublicWeb\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcPublicWeb\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "KmcPublicWeb\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAACoBAAAAAAAAAAAQwEUBAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-01T06:20:50.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ParticipantViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcPublicWeb\\Models\\ParticipantViewModel.cs",
+              "RelativeDocumentMoniker": "KmcPublicWeb\\Models\\ParticipantViewModel.cs",
+              "ToolTip": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcPublicWeb\\Models\\ParticipantViewModel.cs",
+              "RelativeToolTip": "KmcPublicWeb\\Models\\ParticipantViewModel.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAzwAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T06:32:59.861Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Participant.cs",
+              "DocumentMoniker": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcEventApi\\Models\\Participant.cs",
+              "RelativeDocumentMoniker": "KmcEventApi\\Models\\Participant.cs",
+              "ToolTip": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcEventApi\\Models\\Participant.cs",
+              "RelativeToolTip": "KmcEventApi\\Models\\Participant.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T07:01:59.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcPublicWeb\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "KmcPublicWeb\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcPublicWeb\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "KmcPublicWeb\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T07:02:18.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcPublicWeb\\appsettings.json",
+              "RelativeDocumentMoniker": "KmcPublicWeb\\appsettings.json",
+              "ToolTip": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcPublicWeb\\appsettings.json",
+              "RelativeToolTip": "KmcPublicWeb\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-01T06:54:50.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcPublicWeb\\Program.cs",
+              "RelativeDocumentMoniker": "KmcPublicWeb\\Program.cs",
+              "ToolTip": "C:\\Users\\Kavishka\\source\\repos\\KmcEventApi\\KmcPublicWeb\\Program.cs",
+              "RelativeToolTip": "KmcPublicWeb\\Program.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAgwCMAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T06:18:40.965Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

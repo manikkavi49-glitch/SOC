@@ -1,0 +1,326 @@
+﻿@model List<KmcPublicWeb.Models.EventViewModel>
+@{
+    ViewData["Title"] = "KMC Admin Portal";
+}
+
+<div class="container-fluid bg-dark text-light min-vh-100 py-4" style="background-color: #0f172a !important;">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-5 p-4 rounded-4 shadow-lg" 
+             style="background: linear-gradient(135deg, #1e3a8a 0%, #1e1b4b 100%); border: 1px solid #334155;">
+            <div>
+                <h1 class="fw-bold text-white mb-0"><i class="bi bi-shield-lock-fill me-2 text-info"></i>KMC Admin Portal</h1>
+                <p class="text-info mb-0 small opacity-75">Service-Oriented Architecture (SOA) based Digital Management System.</p>
+            </div>
+            <div>
+                <button type="button" class="btn btn-primary btn-lg shadow-sm me-2" data-bs-toggle="modal" data-bs-target="#addEventModal">
+                    <i class="bi bi-plus-circle me-1"></i> Add New Event
+                </button>
+                <button type="button" class="btn btn-outline-info btn-lg shadow-sm text-white" data-bs-toggle="modal" data-bs-target="#addParticipantModal">
+                    <i class="bi bi-person-plus me-1"></i> Register Participant
+                </button>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <div class="input-group shadow-sm border-0">
+                    <span class="input-group-text bg-dark border-secondary text-info"><i class="bi bi-search"></i></span>
+                    <input type="text" id="globalSearch" class="form-control bg-dark text-white border-secondary shadow-none" 
+                           placeholder="🔍 Search Events or Participants..." style="border-left: none;">
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-5">
+            <h4 class="mb-4 text-info fw-bold"><i class="bi bi-calendar-check me-2"></i>Scheduled Events</h4>
+            <div class="card bg-secondary bg-opacity-10 border-0 shadow-lg rounded-4 overflow-hidden" style="border: 1px solid #334155 !important;">
+                <div class="table-responsive">
+                    <table class="table table-dark table-hover mb-0 align-middle text-center" id="eventTable">
+                        <thead class="table-dark" style="background-color: #1e293b;">
+                            <tr class="text-secondary small uppercase">
+                                <th class="py-3">ID</th>
+                                <th class="py-3 text-start ps-4">Event Title</th>
+                                <th class="py-3">Type</th>
+                                <th class="py-3">📍 Location</th>
+                                <th class="py-3">Date & Time</th>
+                                <th class="py-3">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model != null && Model.Any()) {
+                                foreach (var item in Model) {
+                                    <tr style="border-bottom: 1px solid #334155;">
+                                        <td class="text-secondary">#@item.Id</td>
+                                        <td class="fw-bold text-white text-start ps-4">@item.Title</td>
+                                        <td><span class="badge border border-info text-info px-3">@item.Type</span></td>
+                                        <td class="text-info small">📍 @item.Location</td>
+                                        <td class="small text-secondary">@item.EventDate.ToString("f")</td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <button class="btn btn-sm btn-info me-1" onclick="viewEvent(@item.Id, '@item.Title', '@item.Type', '@item.Description')">
+                                                    <i class="bi bi-eye"></i> View
+                                                </button>
+                                                <button class="btn btn-sm btn-warning me-1" onclick="editEvent(@item.Id, '@item.Title', '@item.Type', '@item.Description', '@item.EventDate.ToString("yyyy-MM-ddTHH:mm")')">
+                                                    <i class="bi bi-pencil"></i> Edit
+                                                </button>
+                                                <form asp-action="DeleteEvent" asp-route-id="@item.Id" method="post" style="display:inline;">
+                                                    <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this event?')">
+                                                        <i class="bi bi-trash"></i> Delete
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                }
+                            } else {
+                                <tr><td colspan="6" class="text-center py-5 text-muted fs-5">No events found in the system.</td></tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div id="participantContainer">
+            <h4 class="mb-4 text-success fw-bold"><i class="bi bi-people-fill me-2"></i>Event Participants</h4>
+            <div class="card bg-secondary bg-opacity-10 border-0 shadow-lg rounded-4 overflow-hidden" style="border: 1px solid #064e3b !important;">
+                <div class="table-responsive">
+                    <table class="table table-dark table-striped table-hover mb-0 align-middle text-center" id="participantTable">
+                        <thead style="background-color: #064e3b;">
+                            <tr class="text-white small">
+                                <th class="py-3 text-start ps-4">FULL NAME</th>
+                                <th class="py-3">EMAIL ADDRESS</th>
+                                <th class="py-3">ASSOCIATED EVENT ID</th>
+                                <th class="py-3">ACTIONS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                @if (ViewBag.Participants != null && ((List<KmcPublicWeb.Models.ParticipantViewModel>)ViewBag.Participants).Any()) 
+                                {
+                                    foreach (var p in (List<KmcPublicWeb.Models.ParticipantViewModel>)ViewBag.Participants) 
+                                    {
+                                        <tr style="border-bottom: 1px solid #064e3b;">
+                                            <td class="text-start ps-4 fw-bold text-info">@p.FullName</td>
+                                            <td class="text-secondary">@p.Email</td>
+                                            <td><span class="badge bg-dark border border-secondary">Event #@p.EventId</span></td>
+                                            <td>
+                                                <form asp-action="RemoveParticipant" asp-route-id="@p.Id" method="post" style="display:inline;">
+                                                    <button type="submit" class="btn btn-sm btn-outline-danger" onclick="return confirm('Are you sure you want to remove this participant?')">
+                                                        <i class="bi bi-x-circle"></i> Remove
+                                                    </button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    }
+                                } 
+                                else 
+                                {
+                                    <tr>
+                                        <td colspan="4" class="text-center py-5 text-muted fs-5">No participants registered yet.</td>
+                                    </tr>
+                                }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="eventDetailModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-white border-secondary shadow-lg" style="background-color: #1e293b !important;">
+            <div class="modal-header border-secondary" id="modalHeaderBg">
+                <h5 class="modal-title fw-bold text-white" id="modalTitle">Event Details</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form id="eventActionForm" asp-action="UpdateEvent" method="post">
+                <div class="modal-body p-4">
+                    <input type="hidden" name="Id" id="modalEventId" />
+                    <div class="mb-3">
+                        <label class="form-label text-info small fw-bold">TITLE</label>
+                        <input name="Title" id="modalTitleInput" class="form-control bg-dark text-white border-secondary shadow-none" required />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-info small fw-bold">TYPE</label>
+                        <input name="Type" id="modalTypeInput" class="form-control bg-dark text-white border-secondary shadow-none" required />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-info small fw-bold">DESCRIPTION</label>
+                        <textarea name="Description" id="modalDescInput" class="form-control bg-dark text-white border-secondary shadow-none" rows="2"></textarea>
+                    </div>
+                    <div class="mb-3" id="dateSection">
+                        <label class="form-label text-info small fw-bold">DATE & TIME</label>
+                        <input name="EventDate" id="modalDateInput" type="datetime-local" class="form-control bg-dark text-white border-secondary shadow-none" />
+                    </div>
+
+                    <div id="participantSection" class="mt-4 d-none">
+                        <h6 class="text-success fw-bold border-bottom border-secondary pb-2">Registered Participants</h6>
+                        <ul id="modalParticipantList" class="list-group list-group-flush small"></ul>
+                    </div>
+                </div>
+                <div class="modal-footer border-secondary" id="modalFooter">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-warning fw-bold px-4 text-dark">Update Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="addEventModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-white border-secondary shadow-lg" style="background-color: #1e293b !important;">
+            <div class="modal-header border-secondary bg-primary">
+                <h5 class="modal-title fw-bold text-white"><i class="bi bi-plus-circle me-2"></i>Create New Event</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form asp-action="CreateEvent" method="post">
+                <div class="modal-body p-4">
+                    <div class="mb-3">
+                        <label class="form-label text-info small fw-bold">TITLE</label>
+                        <input name="Title" class="form-control bg-dark text-white border-secondary shadow-none" placeholder="Enter event title" required />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-info small fw-bold">TYPE</label>
+                        <input name="Type" class="form-control bg-dark text-white border-secondary shadow-none" placeholder="e.g. Musical, Cultural" required />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-info small fw-bold">📍 LOCATION</label>
+                        <input name="Location" class="form-control bg-dark text-white border-secondary shadow-none" placeholder="e.g. Town Hall, Kandy" required />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-info small fw-bold">DESCRIPTION</label>
+                        <textarea name="Description" class="form-control bg-dark text-white border-secondary shadow-none" rows="2" placeholder="Event details..."></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-info small fw-bold">DATE & TIME</label>
+                        <input name="EventDate" type="datetime-local" class="form-control bg-dark text-white border-secondary shadow-none" required />
+                    </div>
+                </div>
+                <div class="modal-footer border-secondary">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary px-5 fw-bold">Save Event</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="addParticipantModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-white border-secondary shadow-lg" style="background-color: #1e293b !important;">
+            <div class="modal-header border-secondary" style="background-color: #0d9488;">
+                <h5 class="modal-title fw-bold text-white"><i class="bi bi-person-plus me-2"></i>Register Participant</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form asp-action="AddParticipant" method="post">
+                <div class="modal-body p-4">
+                    <div class="mb-3">
+                        <label class="form-label text-info small fw-bold">SELECT EVENT</label>
+                        <select name="EventId" class="form-select bg-dark text-white border-secondary shadow-none" required>
+                            <option value="">-- Choose an Event --</option>
+                            @if (Model != null) {
+                                foreach (var ev in Model) {
+                                    <option value="@ev.Id">@ev.Title</option>
+                                }
+                            }
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-info small fw-bold">FULL NAME</label>
+                        <input name="FullName" class="form-control bg-dark text-white border-secondary shadow-none" placeholder="John Doe" required />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-info small fw-bold">EMAIL</label>
+                        <input name="Email" type="email" class="form-control bg-dark text-white border-secondary shadow-none" placeholder="john@example.com" required />
+                    </div>
+                </div>
+                <div class="modal-footer border-secondary">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-info text-white w-100 fw-bold">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    // 1. Global Search Functionality (Events and Participants)
+    document.getElementById('globalSearch').addEventListener('keyup', function() {
+        let value = this.value.toLowerCase();
+        
+        // Filter Events Table
+        let eventRows = document.querySelectorAll("#eventTable tbody tr");
+        eventRows.forEach(row => {
+            if (!row.innerText.includes("No events found")) {
+                row.style.display = row.innerText.toLowerCase().includes(value) ? "" : "none";
+            }
+        });
+
+        // Filter Participants Table
+        let participantRows = document.querySelectorAll("#participantTable tbody tr");
+        participantRows.forEach(row => {
+            if (!row.innerText.includes("No participants registered")) {
+                row.style.display = row.innerText.toLowerCase().includes(value) ? "" : "none";
+            }
+        });
+    });
+
+    // 2. View Event Function
+    function viewEvent(id, title, type, desc) {
+        setModalMode("view");
+        document.getElementById('modalTitle').innerText = "View Event: " + title;
+        document.getElementById('modalTitleInput').value = title;
+        document.getElementById('modalTypeInput').value = type;
+        document.getElementById('modalDescInput').value = desc;
+
+        let participants = (@Html.Raw(Json.Serialize(ViewBag.Participants)));
+        let listHtml = "";
+        let filtered = participants.filter(p => p.eventId == id);
+        
+        if(filtered.length > 0) {
+            filtered.forEach(p => {
+                listHtml += `<li class="list-group-item bg-transparent text-white border-secondary border-0 ps-0">
+                                <i class="bi bi-person-check text-success me-2"></i>${p.fullName} (${p.email})
+                             </li>`;
+            });
+        } else {
+            listHtml = "<li class='text-muted small'>No participants registered.</li>";
+        }
+        document.getElementById('modalParticipantList').innerHTML = listHtml;
+        new bootstrap.Modal(document.getElementById('eventDetailModal')).show();
+    }
+
+    // 3. Edit Event Function
+    function editEvent(id, title, type, desc, date) {
+        setModalMode("edit");
+        document.getElementById('modalTitle').innerText = "Edit Event Details";
+        document.getElementById('modalEventId').value = id;
+        document.getElementById('modalTitleInput').value = title;
+        document.getElementById('modalTypeInput').value = type;
+        document.getElementById('modalDescInput').value = desc;
+        document.getElementById('modalDateInput').value = date;
+        new bootstrap.Modal(document.getElementById('eventDetailModal')).show();
+    }
+
+    function setModalMode(mode) {
+        const isView = mode === "view";
+        document.getElementById('modalHeaderBg').className = "modal-header border-secondary " + (isView ? "bg-info" : "bg-warning");
+        document.getElementById('modalTitleInput').readOnly = isView;
+        document.getElementById('modalTypeInput').readOnly = isView;
+        document.getElementById('modalDescInput').readOnly = isView;
+        document.getElementById('dateSection').className = isView ? "d-none" : "mb-3";
+        document.getElementById('modalFooter').className = isView ? "d-none" : "modal-footer border-secondary";
+        document.getElementById('participantSection').className = isView ? "mt-4" : "d-none";
+    }
+</script>
+
+<style>
+    body { background-color: #0f172a !important; font-family: 'Segoe UI', sans-serif; }
+    .form-control:focus, .form-select:focus { background-color: #0f172a; color: white; border-color: #3b82f6; box-shadow: none; }
+    .table-hover tbody tr:hover { background-color: rgba(255, 255, 255, 0.05) !important; transition: 0.2s; }
+    .btn { border-radius: 8px; transition: 0.2s; }
+    .btn:hover { transform: scale(1.02); box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+    .badge { font-weight: 500; font-size: 0.75rem; }
+</style>

@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="../KmcOrganizerPortal/KmcOrganizerPortal/KmcOrganizerPortal.csproj" />
+  <Project Path="KmcEventApi/KmcEventApi.csproj" />
+  <Project Path="KmcPublicWeb/KmcPublicWeb.csproj" Id="13b29bd5-db25-464e-8219-cd2798c7da2c" />
+</Solution>

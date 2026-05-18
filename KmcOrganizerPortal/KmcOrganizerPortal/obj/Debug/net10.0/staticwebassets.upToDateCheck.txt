@@ -1,0 +1,12 @@
+wwwroot\style.css
+wwwroot\auth.js
+wwwroot\dashboard.html
+wwwroot\register.html
+wwwroot\login.html
+wwwroot\index.html
+C:\Users\Kavishka\source\repos\KmcOrganizerPortal\KmcOrganizerPortal\wwwroot\style.css
+C:\Users\Kavishka\source\repos\KmcOrganizerPortal\KmcOrganizerPortal\wwwroot\auth.js
+C:\Users\Kavishka\source\repos\KmcOrganizerPortal\KmcOrganizerPortal\wwwroot\login.html
+C:\Users\Kavishka\source\repos\KmcOrganizerPortal\KmcOrganizerPortal\wwwroot\register.html
+C:\Users\Kavishka\source\repos\KmcOrganizerPortal\KmcOrganizerPortal\wwwroot\dashboard.html
+C:\Users\Kavishka\source\repos\KmcOrganizerPortal\KmcOrganizerPortal\wwwroot\index.html

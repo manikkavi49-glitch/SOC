@@ -1,0 +1,16 @@
+@KmcEventApi_HostAddress = https://localhost:7108
+
+### 1. Create a new Event (Organizer)
+POST {{KmcEventApi_HostAddress}}/api/events
+Content-Type: application/json
+
+{
+  "title": "Kandy Cultural Fest",
+  "description": "Annual cultural event in Kandy city.",
+  "eventDate": "2026-05-20T10:00:00",
+  "type": "Cultural",
+  "createdBy": "Kavishka"
+}
+
+### 2. Search Events (Public)
+GET {{KmcEventApi_HostAddress}}/api/events?type=Cultural

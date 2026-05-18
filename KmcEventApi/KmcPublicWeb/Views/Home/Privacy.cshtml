@@ -1,0 +1,63 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+<div class="container-fluid bg-dark text-light min-vh-100 py-5" style="background-color: #0f172a !important;">
+    <div class="container">
+        <div class="mb-5 p-4 rounded-4 shadow-lg text-center" 
+             style="background: linear-gradient(135deg, #1e3a8a 0%, #1e1b4b 100%); border: 1px solid #334155;">
+            <h1 class="fw-bold text-white display-5 mb-2"><i class="bi bi-shield-check me-2 text-info"></i>Privacy Policy</h1>
+            <p class="text-info opacity-75">Kandy Municipal Council Digital Management System (SOA)</p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="card bg-secondary bg-opacity-10 border-0 shadow-lg rounded-4 p-5" style="border: 1px solid #334155 !important;">
+                    
+                    <div class="mb-4">
+                        <h4 class="text-info border-bottom border-secondary pb-2 mb-3">1. Information We Collect</h4>
+                        <p class="text-secondary small">
+                            Within the KMC Digital Portal, we collect basic administrative data including event details, location information, 
+                            and participant information (Full Name and Email) to facilitate the digital management of municipal activities.
+                        </p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="text-info border-bottom border-secondary pb-2 mb-3">2. How We Use Data</h4>
+                        <p class="text-secondary small">
+                            Data is used strictly for organizing municipal events and communicating with participants. 
+                            Being a Service-Oriented Architecture (SOA), data flows between internal services securely via encrypted endpoints.
+                        </p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="text-info border-bottom border-secondary pb-2 mb-3">3. Data Security</h4>
+                        <p class="text-secondary small">
+                            KMC prioritizes data security. We implement SSL/TLS encryption for service communication and use secure SQL 
+                            databases to ensure data persistence and integrity. Access is restricted to authorized administrative personnel.
+                        </p>
+                    </div>
+
+                    <div class="mb-0 p-3 rounded-3 bg-info bg-opacity-10 border border-info border-opacity-25">
+                        <p class="text-info mb-0 small text-center">
+                            <i class="bi bi-info-circle me-2"></i> This policy is compliant with the Kandy Municipal Council Digital Standards 2026.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <a asp-action="Index" class="btn btn-outline-info btn-lg rounded-pill px-5 shadow-sm">
+                <i class="bi bi-arrow-left me-2"></i> Back to Dashboard
+            </a>
+        </div>
+    </div>
+</div>
+
+<style>
+    body { background-color: #0f172a !important; font-family: 'Segoe UI', sans-serif; }
+    h4 { font-weight: 600; font-size: 1.25rem; }
+    p { line-height: 1.8; }
+    .card { backdrop-filter: blur(10px); }
+</style>
